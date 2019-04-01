@@ -69,6 +69,7 @@ int main()
     transposerec(matr, 0, 0, MATR_SIZE);
     t = (clock() - t) / (double)CLOCKS_PER_SEC;
     check(matr);
+    free(matr);
     printf("Cache oblivious time: %g sec\n", t);
     return 0;    
 }
